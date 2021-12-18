@@ -1,0 +1,113 @@
+/*Especificidad: 001*/
+html {
+    box-sizing: border-box;
+}
+
+/*Especificidad: 001*/
+body {
+    position: relative;
+    padding-bottom: 10em;
+    min-height: 100%;
+    max-height: 100%;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/*Especificidad: 001*/
+h1 {
+    font-size: x-large;
+   
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/*Especificidad: 001*/
+h2, h3, h4, h5, h6, h7, h8, h9, h10, h11 {
+    text-transform: uppercase;
+    padding-top: 1em;
+}
+
+/*Especificidad: 010*/
+[for="pantalla"] { 
+    display: none;
+    color: white;
+    
+    background-color: black;
+}
+
+/*Especificidad: 001*/
+*:after {
+    box-sizing: inherit;
+}
+
+/*Especificidad: 011*/
+input[type=text] {
+      width: 50%;
+      padding: 5px 10px;
+      font-size: 16px;
+      margin: 1px 0;
+      border: 1px solid silver;
+      border-radius: 1px;
+      text-align: left;
+      color: black;
+      background: white;
+}
+   
+/*Especificidad: 011*/
+input[type=button], input[type=submit], input[type=reset] {
+      
+      border: none;
+      
+      padding: 10px 32px;
+      font-size: 16px;
+      min-width: 16%;
+      text-decoration: none;
+      margin: 2px 2px;
+      cursor: pointer;
+      background-color: rgb(86, 11, 184);
+      color:white;
+  }
+
+  /*Especificidad: 021*/
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: rgb(175, 123, 243);
+    color:black;
+  }
+
+  /*Especificidad: 001*/
+  form{
+      text-align: center;
+  }
+
+/*Especificidad: 001*/
+nav {
+  overflow: hidden;
+  background-color: rgb(86, 11, 184);
+  color: white;
+  text-align: center;
+}
+
+/*Especificidad: 002*/
+nav a {
+  float: left;
+  background-color: inherit;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*Especificidad: 012*/
+nav a:hover {
+    background-color: rgb(175, 123, 243);
+    color:black;
+}
+
+/*Especificidad: 001*/
+section{
+    background-color: lightgrey;
+    color: black;
+}
