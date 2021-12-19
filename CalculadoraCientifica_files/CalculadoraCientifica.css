@@ -1,0 +1,98 @@
+/*Especificidad: 001*/
+body{
+    font-family: Helvetica, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    color: black;
+}
+
+/*Especificidad: 001*/
+h1{
+    text-transform: uppercase;
+}
+
+/*Especificidad: 001*/
+main {
+    background-color: #d9d9d9;
+    display: inline-block;
+    padding: 1.2em;
+    width: 400px;
+    height: 400px;
+    margin: 2em;
+    color: black;
+}
+
+/*Especificidad: 001*/
+label {
+    visibility: hidden;
+}
+
+/*Especificidad: 001*/
+form {
+    display: grid;
+    grid-column-gap: 2px;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+/*Especificidad: 002*/
+form>input{
+    width:4em;
+    font-weight: normal;
+    color: black;
+    background-color: #e6e6e6;
+    font-size: 1.2em;
+    height: 2em;
+    border: 0px;
+}
+
+/*Especificidad: 022*/
+form>input[type = button]:hover{
+    border: 3px #363636;
+    background-color:lightgrey;
+    color: black;
+}
+
+/*Especificidad: 022*/
+form>input[type = button]:active{
+    border: 3px #363636;
+    background-color: #afafaf;
+    color: black;
+}
+
+/*Especificidad: 012*/
+form>input:focus{
+    outline: none;
+}
+
+/*Especificidad: 011*/
+input:nth-child(18),input:nth-child(19),input:nth-child(20),
+input:nth-child(21),input:nth-child(23),input:nth-child(24),
+input:nth-child(25),input:nth-child(26),input:nth-child(29),
+input:nth-child(30) {
+    font-weight: bold;
+    color: black;
+    background-color: #ffffff;
+}
+
+/*Especificidad: 012*/
+form input[type="text"] {
+    grid-column: 1 / span 5;
+    width: 95%;
+    padding-top: 0.2em;
+    padding-right: 0.15em;
+    text-align: right;
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+    border: 0em;
+    background-color: #d9d9d9;
+    color: black;
+
+    text-align: right;
+}
+
+/*Especificidad: 001*/
+label {
+    visibility: hidden;
+}

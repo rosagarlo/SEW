@@ -53,3 +53,8 @@ form input[type="text"] {
 
     text-align: right;
 }
+
+/*Especificidad: 001*/
+label {
+    visibility: hidden;
+}
